@@ -21,9 +21,9 @@ def max_of_two(a , b ) :
 # დაწერე ფუნქცია max_of_three, რომელიც იღებს სამ მთელ რიცხვს და აბრუნებს მათგან უდიდეს
 
 def max_of_three (a, b, c):
-    if a>= b and a >= c:
+    if a > b and a > c:
         return a
-    elif b >= a and b >= c:
+    elif b > a and b > c:
         return b
     else:
         return c
@@ -35,7 +35,7 @@ def max_of_three (a, b, c):
 
 
 def is_hot(temperature):
-    if temperature >= 30:
+    if temperature > 30:
         return True
     else:
         return False
