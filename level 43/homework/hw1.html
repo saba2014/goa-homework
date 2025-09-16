@@ -1,0 +1,146 @@
+<!--CSS-ის პრიორიტეტი CSS-ის პრიორიტეტი განსაზღვრავს, რომელი სტილი მიენიჭება ელემენტს, როცა ერთზე მეტი სტილი ცდილობს იმავე მახასიათებლის-->
+
+<!--შექმენით HTML ფაილი, რომელშიც გამოიყენებთ შემდეგ CSS სელექტორებს: ID სელექტორი (მაგალითად #header). Class სელექტორი (მაგალითად .content). Element სელექტორი (მაგალითად div). დააკონფიგურირეთ სტილი თითოეულ სელექტორზე. შეამოწმეთ, რომ ID სელექტორი ყველაზე მაღალი პრიორიტეტით მუშაობს, რადგან სხვა სტილები (მაგალითად კლასები და ელემენტები) არ აფუჭებენ მას-->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS პრიორიტეტების დემონსტრაცია</title>
+    <style>
+        
+        div {
+            background-color: lightgray;
+            color: black;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+       
+        .content {
+            background-color: lightblue;
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        
+        #header {
+            background-color: orange;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="header" class="content">
+        ეს არის div ელემენტი, რომელსაც აქვს ID და Class. ID-ს სტილი იგებს.
+    </div>
+
+    
+    <div class="content">
+        ეს არის div ელემენტი, რომელსაც აქვს მხოლოდ Class.
+    </div>
+
+    
+    <div>
+        ეს არის div ელემენტი, რომელსაც აქვს მხოლოდ ელემენტის სტილი.
+    </div>
+
+</body>
+</html>
+
+<!--შექმენით HTML გვერდი, სადაც რამდენიმე div ელემენტია. შექმენით CSS, სადაც გამოიყენებთ: Inline style (დაპირებული სტილი პირდაპირ HTML-ში). ID სელექტორები (მაგალითად #main, #footer). Class სელექტორები (მაგალითად .container, .highlight). შეამოწმეთ, რომ Inline style აქვს ყველაზე მაღალი პრიორიტეტი.-->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8" />
+    <title> CSS პრიორიტეტები</title>
+    <style>
+        
+        #main {
+            background-color: lightgreen;
+            color: darkgreen;
+            padding: 20px;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        #footer {
+            background-color: lightgray;
+            color: black;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+       
+        .container {
+            border: 2px solid blue;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            background-color: yellow;
+            color: orange;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div id="main" class="container">
+        goa
+    </div>
+
+    
+    <div class="highlight" style="background-color: pink; color: purple; font-size: 20px;">
+        goa is the best
+    </div>
+
+    
+    <div id="footer">
+        hello word
+    </div>
+
+</body>
+</html>
+
+<!--შექმენით HTML ფაილი, რომელშიც იქნება ორი პარაგრაფი. დააკონფიგურირეთ CSS სტილი, სადაც ერთი სტილი ეფუძნება ID სელექტორს (მაგალითად #first), ხოლო მეორე - Class სელექტორს (მაგალითად .second). დააკვირდით, რომ ID სელექტორი ყოველთვის უფრო მაღალი პრიორიტეტით მოქმედებს, ვიდრე Class სელექტორი.-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8" />
+    <title>დავალება 5 - ID vs Class პრიორიტეტი</title>
+    <style>
+        
+        #first {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        
+        .second {
+            color: blue;
+            font-size: 18px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="first">ეს არის პირველი პარაგრაფი (ID სელექტორი #first).</p>
+    <p class="second">ეს არის მეორე პარაგრაფი (Class სელექტორი .second).</p>
+
+</body>
+</html>

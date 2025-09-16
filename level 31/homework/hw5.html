@@ -1,0 +1,71 @@
+<!--შექმენი პატარა ვებგვერდი, რომელიც შეიცავს რამდენიმე ყუთს: პირველი div-ი – შენი სახელი და ასაკი მეორე div-ი – საყვარელი თამაში და ფერი მესამე div-ი – საყვარელი საჭმელი ყველა div-ი გააფერადე და ტექსტიც ლამაზად დააწერე. -->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ჩემი ინფორმაცია</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .info-box {
+      width: 300px;
+      padding: 20px;
+      margin: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      color: white;
+    }
+
+    .name-age {
+      background-color: #4CAF50; /* მწვანე */
+    }
+
+    .game-color {
+      background-color: #1E90FF; /* ლურჯი */
+    }
+
+    .favorite-food {
+      background-color: #FF8C00; /* ნარინჯისფერი */
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="info-box name-age">
+    <h2>სახელი და ასაკი</h2>
+    <p>saba</p>
+    <p>11 wlis</p>
+  </div>
+
+  <div class="info-box game-color">
+    <h2>საყვარელი თამაში და ფერი</h2>
+    <p>game:pubg </p>
+    <p>color: green</p>
+  </div>
+
+  <div class="info-box favorite-food">
+    <h2>საყვარელი საჭმელი</h2>
+    <p>ხინკალი</p>
+  </div>
+
+</body>
+</html>

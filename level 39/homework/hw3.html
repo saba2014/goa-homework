@@ -1,0 +1,46 @@
+<!--) შექმენით 1 div ელემენტი, რომელშიც გექნებათ სათაური, 3 პარაგრაფი, ღილაკი. თქვენი დავალებაა წამოღოთ სათაური და ღილაკი, ხოლო შემდეგ გასტილოთ ისინი id selector-ების დახმარებით, პარაგრაფებს კი მიეცით ერთნაირი class selector-ი და გასტილეთ ისინი ერთნაირად-->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>hello world</title>
+  <style>
+    #main-title {
+      font-size: 24px;
+      color: darkblue;
+      text-align: center;
+    }
+
+    #main-button {
+      background-color: darkgreen;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .paragraph {
+      font-family: Georgia, serif;
+      color: #555;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1 id="main-title">ეს არის სათაური</h1>
+    
+    <p class="paragraph">პირველი პარაგრაფი</p>
+    <p class="paragraph">მეორე პარაგრაფი</p>
+    <p class="paragraph">მესამე პარაგრაფი</p>
+    
+    <button id="main-button">ღილაკი</button>
+  </div>
+
+</body>
+</html>

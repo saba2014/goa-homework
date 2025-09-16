@@ -1,0 +1,100 @@
+<!--ახსენი, რას ნიშნავს RGB და რატომ იყენებენ რიცხვებს 0-დან 255-მდე. შემდეგ, აირჩიე რომელიმე ფერი და ახსენი მისი მნიშვნელობა. მაგალითად, რა ფერი იქნება, თუ RGB მნიშვნელობა იქნება rgb(128, 64, 192).-->
+
+
+<!--R – Red (წითელი)
+
+G – Green (მწვანე)
+
+B – Blue (ლურჯი)-->
+
+<!--რატომ იყენებენ რიცხვებს 0-დან 255-მდე? -->
+<!--თითოეული ფერი (წითელი, მწვანე, ლურჯი) აღინიშნება რიცხვით 0-დან 255-მდე. ეს იმიტომ ხდება, რომ კომპიუტერები ფერებს ხშირად წარმოადგენენ 8 ბიტით თითოეულ არხზე-->
+
+
+
+<!--128 – წითელი (ნახევრად ინტენსიური)
+
+64 – მწვანე (დაბალი ინტენსივობა)
+
+192 – ლურჯი (მაღალი ინტენსივობა)-->
+
+<!--rgb(255, 0, 0)წითელი
+rgb(0, 255, 0)მწვანე
+rgb(0, 0, 255)ლურჯი
+rgb(255, 255, 0) ყვითელი
+rgb(0, 255, 255) ცისფერი
+rgb(255, 0, 255)იისფერი
+-->
+
+<!--შექმენი HTML ფაილი, რომელშიც ფონის ფერი იქნება შენი საყვარელი ფერი. გამოიყენე background-color სტილი და მიუთითე RGB კოდი. გამოამუშავე ნებისმიერი ფერი, რომელიც შენი გემოვნებით კარგად ერწყმის გვერდს-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>RGB ფერები</title>
+    <style>
+        
+        body {
+            background-color: rgb(240, 240, 255); 
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        
+        .color-box {
+            width: 200px;
+            height: 100px;
+            margin: 15px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        
+        .color-box:hover {
+            background-color: rgb(255, 100, 100); 
+        }
+
+       
+        .red {
+            background-color: rgb(255, 0, 0);
+        }
+
+        .green {
+            background-color: rgb(0, 255, 0);
+            color: black; 
+        }
+
+        .blue {
+            background-color: rgb(0, 0, 255);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>RGB ფერები HTML-ში</h1>
+    
+   
+    <div class="color-box red">
+        rgb(255, 0, 0) – წითელი
+    </div>
+
+   
+    <div class="color-box green">
+        rgb(0, 255, 0) – მწვანე
+    </div>
+
+    
+    <div class="color-box blue">
+        rgb(0, 0, 255) – ლურჯი
+    </div>
+
+</body>
+</html>
+
+
+<!---->

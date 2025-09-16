@@ -1,0 +1,150 @@
+<!-- ახსენით თითოეული გასტილვის გზა: inline css, internal css და external css.-->
+
+Inline CSS:<p style="color: red; font-size: 20px;">goa</p>
+
+
+Internal CSS: <head>
+  <style>
+    p {
+      color: rgb(51, 255, 0);
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+
+External CSS:
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<!--შექმენით HTML ფაილი და internal css ის საშუალებით გასტილეთ შემდეგი ელემენტები: 4 paragraph, 5 heading, 4 img და 3 button. 2 paragraph - oს ტექსტის ფერი იყოს წითელი, უკანა ფონი შავი, ცენტრში გადაიტანეთ, გაადიდეთ ტექსტი და border გამოიყენეთ როგორც თქვენ მოგინდებათ დანარცენი ორი paragraph კი თქვენს გემოზე გასტილეთ მაგრამ სავალდებულოა რაც იცით ყველა property(კუთვნილება) გამოიყენეთ. 3 heading - ის ტექსტის ფერი იყოს ყვითელი, უკანა ფონი შავი და border გაუკეთეთ 1px ორმაგი ხაზით იასამნისფერი ფერით. დანარჩენი ორი heading თქვენს გემოზე გასტილეთ. 4 img - border ები შეცვალეთ 3px წერტილოვანი ხაზით შავი ფერით და button - ებში გამოიყენეთ ყველა ნასწავლი კუთვნილება.-->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Practice</title>
+    <style>
+       
+        .p1, .p2 {
+            color: red;
+            background-color: black;
+            text-align: center;
+            font-size: 24px;
+            border: 2px solid white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .p3 {
+            color: green;
+            background-color: lightgray;
+            font-style: italic;
+            font-weight: bold;
+            text-align: right;
+            font-size: 20px;
+            border: 3px dashed blue;
+            padding: 12px;
+            margin: 10px;
+        }
+
+        .p4 {
+            color: darkblue;
+            background-color: beige;
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            font-size: 18px;
+            border: 1px dotted orange;
+            padding: 8px;
+            margin: 10px;
+        }
+
+       
+        .h1, .h2, .h3 {
+            color: yellow;
+            background-color: black;
+            border: 1px double violet;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .h4 {
+            color: navy;
+            background-color: lightblue;
+            font-size: 28px;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 2px solid navy;
+        }
+
+        .h5 {
+            color: maroon;
+            background-color: lightgreen;
+            font-style: italic;
+            border-left: 4px solid brown;
+            padding: 10px;
+        }
+
+        
+        img {
+            border: 3px dotted black;
+            margin: 10px;
+            width: 150px;
+            height: auto;
+        }
+
+        
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #3e8e41;
+        }
+
+        .btn:active {
+            background-color: #2e6f31;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <p class="p1">goa</p>
+    <p class="p2">goa best</p>
+    <p class="p3">hello world</p>
+    <p class="p4">goa is the best</p>
+
+  
+    <h1 class="h1">სათაური 1</h1>
+    <h2 class="h2">სათაური 2</h2>
+    <h3 class="h3">სათაური 3</h3>
+    <h4 class="h4">სათაური 4</h4>
+    <h5 class="h5">სათაური 5</h5>
+
+    
+    <img src="wonder of u.png" alt="სურათი 1">
+    <img src="jotaro.png" alt="სურათი 2">
+    <img src="jojo.png" alt="სურათი 3">
+    <img src="stands.png" alt="სურათი 4">
+
+    
+    <button class="btn">ღილაკი 1</button>
+    <button class="btn">ღილაკი 2</button>
+    <button class="btn">ღილაკი 3</button>
+
+</body>
+</html>
+
